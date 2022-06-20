@@ -15,4 +15,5 @@
 ## How to actually make use of these things
 - A regular React component can import the global selector, global dispatch, relevant actions, and relevant selectors.
 - The imported actions "know" which slice they belong to, so passing them to the dispatch function will pose no issues.
+- Wrap everything with a <Provider> component to pass a specified store to every child component (this removes the need to prop-drill).
 
